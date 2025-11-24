@@ -1,0 +1,61 @@
+.about {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    justify-content: center;
+    background-color: var(--color-background2);
+
+    h1 {
+        color: var(--color-h1);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    p {
+        text-align: left;
+        color: var(--color-paragrafo);
+        font-weight: medium;
+        font-size: 1.1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.stations {
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: var(--color-background1);
+
+    h2 {
+        color: var(--color-h2-);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+}
+
+.bike {
+    display: grid;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-background2);
+
+    h2 {
+        color: var(--color-h2);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    h3 {
+        color: var(--color-h3);
+        font-weight: medium;
+        font-size: 1.2rem;
+    }
+
+}

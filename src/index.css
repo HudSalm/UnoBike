@@ -1,0 +1,27 @@
+:root {
+    --color-h1: #EA284B;
+    --color-h2: #EA284B;
+    --color-h2-: #43204A;
+    --color-h3: #F7F7F7;
+    --color-paragrafo: #F7F7F7;
+    --color-menu: #422343;
+    --color-button: #43204A;
+    --color-button-hover: #7F1E47;
+    --color-background1: #F7F7F7;
+    --color-background2: #422343;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Serif', serif;
+}
+
+p, span, a, li, button {
+    font-family: 'Inter', sans-serif;
+}
