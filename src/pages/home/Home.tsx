@@ -1,8 +1,10 @@
 import Header from "../../components/header"
-import styles from "./App.module.scss"
+import styles from "./Home.module.scss"
 import ImgBike from "../../assets/ImgBike.png"
 import MapStation from "../../components/mapStation"
 import CardBike from "../../components/cardBike"
+import App from "../../components/app"
+import Footer from "../../components/footer"
 
 
 
@@ -11,7 +13,7 @@ const Home = () => {
     <body>
       <Header/>
       <main>
-        <section className={styles.about}>
+        <section className={styles.about} id ="sobre">
           <h1>Pedalar não tem preço. Vá de Unobike.</h1>
           <p>
             Acreditamos que a mobilidade urbana é um direito, não um luxo. Por isso, a Unobike quebra barreiras: 
@@ -30,7 +32,12 @@ const Home = () => {
           <h3>Conheça a nossa bicicleta:</h3>
           <CardBike/>
         </section>
+        <section className={styles.app}>
+          <h2>Sua liberdade está na palma da sua mão. É só baixar e usar agora mesmo</h2>
+          <App/>
+        </section>
       </main>
+      <Footer/>
     </body>
   )
 }

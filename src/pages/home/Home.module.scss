@@ -57,5 +57,27 @@
         font-weight: medium;
         font-size: 1.2rem;
     }
+}
 
+.app {
+    display: grid;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-background1);
+    position: relative;
+
+    h2 {
+        color: var(--color-h2-);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+}
+.app::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: var(--color-background2);
+    position: absolute;
+    bottom: 10px;
+    justify-self: center;
 }

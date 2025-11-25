@@ -1,0 +1,31 @@
+.footer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    position: relative;
+
+    p {
+        color: var(--color-background2);
+        font-weight: medium;
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 40vw;
+        justify-self: center;
+    }
+}
+
+.footer::after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background-color: var(--color-background2);
+        position: absolute;
+        bottom: 90px;
+        justify-self: center;
+    }
