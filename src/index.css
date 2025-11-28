@@ -18,10 +18,23 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+main {
+    margin-top: 6rem;
+}
+
+body {
+    margin-top: 2rem;
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+h1, h2, h3, span {
     font-family: 'Roboto Serif', serif;
 }
 
-p, span, a, li, button {
+p, a, li, button {
     font-family: 'Inter', sans-serif;
 }

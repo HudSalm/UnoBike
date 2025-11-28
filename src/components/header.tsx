@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo.svg'
 import styles from './header.module.scss'
 import { Sling } from 'hamburger-react'
@@ -10,7 +11,7 @@ const Header = () => {
     
     return (
         <header className={styles.header}>
-            <img className={styles.logo} src={Logo} alt="" />
+            <a href=""><img className={styles.logo} src={Logo} alt=" logo do site" /></a>
             <nav className={styles.nav}>
                <div className={styles.hamburguerIcon}>
                     <Sling 
@@ -23,10 +24,10 @@ const Header = () => {
                 </div>
                
                 <ul className={`${styles.navMenu} ${isOpen ? styles.open : ''}`} aria-expanded={isOpen}>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">BICICLETAS</a></li>
-                    <li><a href="#">ESTAÇÕES</a></li>
-                    <li><a href="#">APP</a></li>
+                    <li><Link to='/'>HOME</Link></li>
+                    <li><Link to='/Contact'>CONTATO</Link></li>
+                    <li><Link to='/PrivacyPolicy'>TERMO</Link></li>
+                    <li><a className={styles.app} href="https://play.google.com/store/apps/details?id=com.unobike.bikedagenteguapi">APP</a></li>
                 </ul>
             </nav>
         </header>

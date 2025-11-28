@@ -4,7 +4,7 @@ import styles from "./footer.module.scss"
 const Footer = () => { 
     return (
         <footer className={styles.footer}>
-            <a href="#sobre"><img src={Logo} alt="logo do site" /></a>
+            <a href="#"><img className={styles.logo} src={Logo} alt="logo do site" /></a>
             <p>Copyright 2020 © Zero9. Todos os direitos reservados</p>
         </footer>
     )

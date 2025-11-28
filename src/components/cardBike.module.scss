@@ -1,4 +1,19 @@
 .card {
     border-radius: 8px;
     box-shadow: 4px 2px 20px var(--color-h2);
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 40vw;
+        }
+    }
 }

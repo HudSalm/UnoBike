@@ -4,6 +4,11 @@
     align-items: center;
     padding: 1rem;
     position: relative;
+    position: fixed;
+    z-index: 9000;
+    background-color: var(--color-background1);
+    width: 100%;
+    top: 0;
 
     .logo {
         max-width: 100%;
@@ -56,26 +61,65 @@
 
 
 @media (min-width: 768px) {
-    
+  
+.header {
+    display: flex;
+    padding: 1rem 2rem;
+
+    .logo {
+        width: 7vw;
+    }
+
     .hamburguerIcon {
         display: none; 
     }
 
     .navMenu {
-        position: static;
         transform: none;
-        width: auto;
-        height: auto;
         background-color: transparent;
         flex-direction: row;
-        gap: 1.5rem;
-    }
+        gap: 1rem;
+        position: static;
+        margin-top: 0;
+        padding: 1rem;
 
-    .navMenu li {
-        margin: 0; 
-    }
+        li {
+            border: none;
+            margin: 0;
+            font-weight: bold;
+            padding: 0.7rem 1rem;
+            transition: 0.5s;
+        }
+        li:hover {
+            transform: scale(1.05);  
+        }
 
-    .navMenu a {
-        font-size: 1rem;
+        .app {
+            background-color: #422343;
+            border-radius: 8px;
+            padding: 0.7rem 2.5rem;
+            color: #f7f7f7;
+           
+
+            &:hover {
+                background-color: var(--color-button-hover);
+                border: none;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            font-weight: 500;
+            transform: scale(1.10);
+            border-bottom: solid #422343 1px;
+
+        }
     }
+}
+
 }

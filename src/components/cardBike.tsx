@@ -1,11 +1,12 @@
 import bike from "../assets/bike.png";
 import styles from "./cardBike.module.scss";
+import { Reveal } from "./reveal";
 
 const CardBike = () => {
     return (
-        <div className={styles.card}>
+        <Reveal as="div" className={styles.card}>
             <img src={bike} alt="Bicicleta Unobike" />
-        </div>
+        </Reveal>
     );
 }
 

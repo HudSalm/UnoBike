@@ -6,6 +6,7 @@
     padding: 2rem;
     position: relative;
 
+
     p {
         color: var(--color-background2);
         font-weight: medium;
@@ -17,6 +18,9 @@
         height: auto;
         width: 40vw;
         justify-self: center;
+        cursor: pointer;
+    }
+    .logo {
     }
 }
 
@@ -28,4 +32,30 @@
         position: absolute;
         bottom: 90px;
         justify-self: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 1rem;
+
+        img {
+            width: 15vw;
+        }
+        p {
+            font-size: 1.2rem;
+            align-self: center;
+            flex-grow: 2;
+        }
     }
+
+    .footer::after {
+        content: "";
+        height: 50%;
+        width: 3px;
+        position: absolute;
+        bottom: 4vw;
+        left: 25%;
+    }
+}
