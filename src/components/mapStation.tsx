@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react"
-import { MapContainer, TileLayer, Marker, Popup, useMap} from "react-leaflet"
+import {useState, useEffect} from "react"
+import { MapContainer, TileLayer, Marker, useMap} from "react-leaflet"
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet"
 import icon from "leaflet/dist/images/marker-icon.png"
@@ -46,7 +46,7 @@ const MapStation = () => {
     
     return (
     <div className={styles.container}>
-      <p>Estação selecionada: <p><strong>{activeStation.nome}</strong></p></p>
+      <p>Estação selecionada: <span><strong>{activeStation.nome}</strong></span></p>
 
 
       <MapContainer 
