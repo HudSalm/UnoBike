@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    background-color: var(--color-background2);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        font-size: 1rem;
+        color: var(--color-h2);
+    }
+
+    .button {
+        border: none;
+        background-color: var(--color-background2);
+        color: var(--color-paragrafo);
+        padding: 0rem ;
+        width: 20vw;
+    }
+}
+
+.content {
+    background-color: var(--color-background2);
+    color: var(--color-paragrafo);
+    padding: 1rem;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: medium;
+    margin-top: -2.5rem;
+}

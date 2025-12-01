@@ -26,7 +26,7 @@ const Header = () => {
                 <ul className={`${styles.navMenu} ${isOpen ? styles.open : ''}`} aria-expanded={isOpen}>
                     <li><Link to='/'>HOME</Link></li>
                     <li><Link to='/Contact'>CONTATO</Link></li>
-                    <li><Link to='/PrivacyPolicy'>TERMO</Link></li>
+                    <li><Link to='/PrivacyPolicy'>POLÍTICA DE PRIVACIDADE</Link></li>
                     <li><a className={styles.app} href="https://play.google.com/store/apps/details?id=com.unobike.bikedagenteguapi">APP</a></li>
                 </ul>
             </nav>

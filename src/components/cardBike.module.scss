@@ -1,19 +1,64 @@
-.card {
-    border-radius: 8px;
-    box-shadow: 4px 2px 20px var(--color-h2);
+/* 1. Definimos a variável para a rotação suave */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    z-index: 1; 
+    /* IMPORTANTE: Remova background-color daqui */
+
+    /* CAMADA 1 (Fundo): O Gradiente que gira */
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -4px; /* Define a grossura da borda (4px) */
+        background: conic-gradient(
+            from var(--angle), 
+            #EA284B, 
+            #966d9f, 
+            #EA284B
+        );
+        z-index: -2; /* Fica lááá no fundo */
+        border-radius: 10px; /* Um pouco maior que o card */
+        animation: girar 3s linear infinite;
+        filter: blur(8px); /* Brilho neon */
+    }
+
+    /* CAMADA 2 (Meio): O cartão preto */
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0; /* Ocupa o tamanho exato do .card */
+        background: var(--color-background2); /* A cor preta vem pra cá */
+        z-index: -1; /* Fica acima do gradiente, mas abaixo da imagem */
+        border-radius: 8px;
+    }
+
+    /* CAMADA 3 (Topo): A imagem */
     img {
         max-width: 100%;
+        z-index: 2;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+
+@keyframes girar {
+    to {
+        --angle: 360deg;
     }
 }
 
 @media (min-width: 768px) {
-    .card {
-        display: flex;
-        justify-content: center;
-        
-        img {
-            width: 40vw;
-        }
+    .card img {
+        width: 40vw;
     }
 }
