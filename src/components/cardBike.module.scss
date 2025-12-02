@@ -49,6 +49,94 @@
         border-radius: 8px;
         position: relative;
     }
+
+    div {
+        z-index: 4;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #966d9f;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: 1s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon1 {
+        top: 15%;
+        left: 34%;
+
+        .plus {
+            max-width: 100%;
+            width: 5vw;
+        }
+
+        .x {
+            display: none;
+            max-width: 100%;
+            width: 5vw;
+        }
+    } 
+
+    .icon2 {
+        top: 20%;
+        right: 30%;
+
+        .plus {
+            max-width: 100%;
+            width: 5vw;
+        }
+
+        .x {
+            display: none;
+            max-width: 100%;
+            width: 5vw;
+        }
+    }
+    .icon3 {
+        bottom: 30%;
+        right: 15%;
+
+        .plus {
+            max-width: 100%;
+            width: 5vw;
+        }
+
+        .x {
+            display: none;
+            max-width: 100%;
+            width: 5vw;
+        }
+    }
+    .icon4 {
+        bottom: 30%;
+        left: 50%;
+
+        .plus {
+            max-width: 100%;
+            width: 5vw;
+        }
+
+        .x {
+            display: none;
+            max-width: 100%;
+            width: 5vw;
+        }
+    }
+
+
+    div:hover {
+        background-color: #EA284B;
+
+        .plus {
+            display: none;
+        }
+        .x {
+            display: block;
+        }
+    }
 }
 
 @keyframes girar {
@@ -61,4 +149,15 @@
     .card img {
         width: 40vw;
     }
+
+.icon:hover {
+
+    .info {
+        background-color: aqua;
+        position: absolute;
+        top: -5rem;
+        border-radius: 8px;
+    }
+
+}
 }

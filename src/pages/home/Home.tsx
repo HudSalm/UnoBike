@@ -4,10 +4,15 @@ import MapStation from "../../components/mapStation"
 import CardBike from "../../components/cardBike"
 import App from "../../components/app"
 import { Reveal } from "../../components/reveal"
+import Carrousel from "../../components/carrousel"
+import { useState } from "react"
+import type { Swiper as SwiperType } from 'swiper';
 
 
 
 const Home = () => {
+  const[swiperRef, setSwiperRef] = useState<SwiperType | null>(null)
+
   return (
       <>
         <section className={styles.about}>
@@ -32,7 +37,10 @@ const Home = () => {
             <h2>Sua liberdade é gratuita. <span>É só pegar e pedalar.</span></h2>
             <h3>Conheça a nossa bicicleta:</h3>
           </Reveal>
-          <CardBike/>
+          <CardBike swiperControl={swiperRef}/>
+          <div className={styles.carrousel}>
+            <Carrousel setSwiperRef={setSwiperRef}/>
+          </div>
         </section>
         <Reveal as="div" className={styles.app}>
           <h2>Sua liberdade está na palma da sua mão.<span>É só baixar e usar agora mesmo.</span></h2>
