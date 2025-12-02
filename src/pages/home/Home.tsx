@@ -33,7 +33,7 @@ const Home = () => {
           <MapStation/>
         </Reveal>
         <section className={styles.bike}>
-          <Reveal as="div">
+          <Reveal as="div" className={styles.Bikedescription}>
             <h2>Sua liberdade é gratuita. <span>É só pegar e pedalar.</span></h2>
             <h3>Conheça a nossa bicicleta:</h3>
           </Reveal>
