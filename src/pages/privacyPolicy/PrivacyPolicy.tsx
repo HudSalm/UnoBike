@@ -43,6 +43,11 @@ const PrivacyPolicy = () => {
 
                     />
                     <CardPolicy
+                        title = 'As políticas de privacidade podem mudar  ?'
+                        paragraph=" Esta Política poderá ser atualizada periodicamente. Em caso de alterações relevantes que demandem novo 
+                                    consentimento, o Usuário será devidamente comunicado.  "
+                    />
+                    <CardPolicy
                         title = 'Em relação aos meus dados, que direitos eu tenho ?'
                         paragraph=" O Usuário poderá, a qualquer momento, mediante requisição formal, solicitar: 
                                     a) a confirmação da existência de tratamento de seus dados; 
@@ -61,11 +66,6 @@ const PrivacyPolicy = () => {
                         title = 'Como eu posso solicitar alterações nos meus dados ?'
                         paragraph=" As solicitações poderão ser feitas através dos canais de atendimento da 
                                     UNOBIKE, devendo ser atendidas em prazo razoável, nos termos da legislação aplicável "
-                    />
-                    <CardPolicy
-                        title = 'As políticas de privacidade podem mudar  ?'
-                        paragraph=" Esta Política poderá ser atualizada periodicamente. Em caso de alterações relevantes que demandem novo 
-                                    consentimento, o Usuário será devidamente comunicado.  "
                     />
                 </Reveal>
             </section>
