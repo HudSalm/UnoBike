@@ -17,23 +17,32 @@ const Carrousel = ( {setSwiperRef}:Props ) => {
             slidesPerView={1.5}
             loop={true}
             onSwiper={(swiper) => setSwiperRef(swiper)}
+            watchSlidesProgress={true}
             className={styles.swiper}
             >
-                <SwiperSlide className={styles.swiperslide}>
-                    <h4>Segurança1</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                <SwiperSlide>
+                    <div className={styles.swiperslide}>
+                        <h4>Segurança1</h4>
+                        <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className={styles.swiperslide}>
-                    <h4>Segurança2</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                <SwiperSlide>
+                    <div className={styles.swiperslide}>
+                        <h4>Segurança2</h4>
+                        <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className={styles.swiperslide}>
-                    <h4>Segurança3</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                <SwiperSlide>
+                    <div className={styles.swiperslide}>
+                        <h4>Segurança3</h4>
+                        <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className={styles.swiperslide}>
-                    <h4>Segurança4</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                <SwiperSlide>
+                    <div className={styles.swiperslide}>
+                        <h4>Segurança4</h4>
+                        <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    </div>
                 </SwiperSlide>
 
         </Swiper>

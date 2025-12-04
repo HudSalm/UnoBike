@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styles from "./cardPolicy.module.scss"
+import { FaCaretDown, FaCaretUp } from "react-icons/fa6";
 
 
 type props = {
@@ -16,11 +17,23 @@ const CardPolicy = ( {paragraph, title}: props) => {
     }
 
     return (
-        <>
+        <div className={styles.policyContainer}>
             <div className={styles.header}>
                 <h2>{title}</h2>
                 <button onClick={alternar} className={styles.button}>
-                    {isOpen ? 'Ocultar' : 'Expandir'}
+                    {isOpen ? (
+                        <>
+                            <p>Ocultar</p> 
+                            <FaCaretUp />
+                        </>
+                        
+                        
+                        ) : 
+                        (<>
+                            <p>Expandir</p> 
+                            <FaCaretDown/>
+                        </>)
+                    }
                 </button>
             </div>
             {isOpen && (
@@ -30,7 +43,7 @@ const CardPolicy = ( {paragraph, title}: props) => {
                     </p>
                 </div>
             )}
-        </>
+        </div>
     )
 }
 

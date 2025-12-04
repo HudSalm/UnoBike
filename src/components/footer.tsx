@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <a href="#"><img className={styles.logo} src={Logo} alt="logo do site" /></a>
-            <p>Copyright 2020 © Zero9. Todos os direitos reservados</p>
+            <p>Copyright 2025 © UnoBike. Todos os direitos reservados</p>
         </footer>
     )
 }
