@@ -78,12 +78,13 @@
         transform: none;
         background-color: transparent;
         flex-direction: row;
-        // flex-wrap: wrap;
         gap: 1rem;
         position: static;
         margin-top: 0;
         padding: 1rem;
         align-items: center;
+        width: 100%;
+
 
         li {
             border: none;

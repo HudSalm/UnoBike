@@ -13,7 +13,7 @@
         font-size: 1rem;
     }
 
-    img {
+    .logoMobile {
         max-width: 100%;
         height: auto;
         width: 40vw;
@@ -21,6 +21,7 @@
         cursor: pointer;
     }
     .logo {
+        display: none;
     }
 }
 
@@ -40,7 +41,11 @@
         grid-template-columns: 1fr 2fr 1fr;
         padding: 1rem;
 
-        img {
+        .logoMobile {
+            display: none;
+        }
+
+        .logo {
             width: 10vw;
         }
         p {
