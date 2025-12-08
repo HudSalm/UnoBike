@@ -1,6 +1,7 @@
 import login from "../assets/LoginScreen.png"
 import SignUpScreen from "../assets/SignUpScreen.png"
 import styles from "./articles.module.scss"
+import { Reveal } from "./reveal";
 
 type props = {
     activeArticle: string;
@@ -13,7 +14,7 @@ const Article = ( {activeArticle}:props) => {
     return (
         <>
         {activeArticle === 'criarConta' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Como criar uma conta?</h2>
                 <p>Para criar uma conta, você deverá seguir os seguintes passos a seguir:</p>
                 <ol>
@@ -28,28 +29,28 @@ const Article = ( {activeArticle}:props) => {
                     </li>
                     <li><p>Por último é só clicar em “Criar Conta” e esperar que sua conta seja aprovada</p></li>
                 </ol>
-            </article>
+            </Reveal>
         )}
          {activeArticle === 'gratuito' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>O uso é realmente gratuito?</h2>
                 <p>
                     Sim! O nosso objetivo é incentivar a mobilidade urbana e a saúde. 
-                    Você não paga nada para desbloquear a bicicleta e nem pelo tempo de uso,desde que respeite as regras de tempo de cada viagem.
+                    Você não paga nada para desbloquear a bicicleta e nem pelo tempo de uso, desde que respeite as regras de tempo de cada viagem.
                 </p>
-            </article>
+            </Reveal>
         )}
         {activeArticle === 'creditCard' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>É necessário cartão de crédito?</h2>
                 <p>
                     Sim, solicitamos o cadastro de um cartão de crédito apenas como garantia de segurança para o patrimônio. 
                     Fique tranquilo: nenhuma cobrança será feita se você utilizar as bicicletas seguindo as regras de uso e devolução. 
                 </p>
-            </article>
+            </Reveal>
         )}
         {activeArticle === 'allow' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Quem pode usar o aplicativo?</h2>
                 <p>
                     O serviço está disponível para qualquer pessoa que tenha:
@@ -59,47 +60,47 @@ const Article = ( {activeArticle}:props) => {
                         <li>Cadastro aprovado no nosso sistema.</li>
                     </ul>
                 </p>
-            </article>
+            </Reveal>
         )}
          {activeArticle === 'moreBike' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Posso alugar mais de uma bicicleta ao mesmo tempo?</h2>
                 <p>
                     Não. O cadastro é pessoal e intransferível, permitindo a retirada de apenas 1 (uma) bicicleta por vez. 
                     Se você está com amigos ou família, peça para que eles baixem o app e façam seus próprios cadastros!
                 </p>
-            </article>
+            </Reveal>
         )}
         {activeArticle === 'time' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Por quanto tempo posso ficar com a bicicleta?</h2>
                 <p>
                     Você pode usar a bicicleta gratuitamente por até [120 minutos] contínuos. 
                     Quer pedalar mais? Sem problemas! Basta devolver a bicicleta em qualquer estação, aguardar [30 minutos] e retirá-la novamente (ou pegar outra). 
                     Você pode fazer isso quantas vezes quiser ao longo do dia.
                 </p>
-            </article>
+            </Reveal>
         )}
          {activeArticle === 'timeOut' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>O que acontece se eu ultrapassar o tempo limite?</h2>
                 <p>
                     O sistema é baseado no compartilhamento: precisamos que a bicicleta volte para que outros possam usar. 
                     Se você exceder o tempo limite de [60 minutos], sua conta estará sujeita a um bloqueio temporário. Fique de olho no cronômetro do app!
                 </p>
-            </article>
+            </Reveal>
         )}
          {activeArticle === 'operation' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Qual o horário de funcionamento?</h2>
                 <p>
                     Você pode retirar e devolver bicicletas todos os dias da semana, das [05h00 às 23h00]. 
                     (obs: O suporte também funcionará nesse mesmo horário)
                 </p>
-            </article>
+            </Reveal>
         )}
         {activeArticle === 'stolen' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>O que acontece se a bicicleta for roubada enquanto está comigo?</h2>
                 <p>
                     Sua segurança vem em primeiro lugar. Caso ocorra um assalto:
@@ -109,19 +110,19 @@ const Article = ( {activeArticle}:props) => {
                         <li>Envie uma cópia do B.O. para nosso suporte através do app ou e-mail [contato@email.com.br] o mais rápido possível para isenção de responsabilidade.</li>
                     </ul>
                 </p>
-            </article>
+            </Reveal>
         )}
          {activeArticle === 'notReturn' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>O que acontece se eu não devolver a bicicleta?</h2>
                 <p>
                     A não devolução da bicicleta é considerada apropriação indébita. Caso a bicicleta não retorne à estação após um longo período sem justificativa ou contato com o suporte, 
                     o usuário estará sujeito a cobrança do valor do equipamento, banimento permanente da plataforma e medidas judiciais cabíveis.
                 </p>
-            </article>
+            </Reveal>
         )}
         {activeArticle === 'contact' && (
-            <article className={styles.createAccount}>
+            <Reveal as="article" className={styles.createAccount}>
                 <h2>Não encontrou o que procurava?</h2>
                 <p>
                     Nossa equipe está pronta para te ajudar. Entre em contato conosco pelo:
@@ -130,7 +131,7 @@ const Article = ( {activeArticle}:props) => {
                         <li>E-mail: [contato@email.com.br]</li>
                     </ul>
                 </p>
-            </article>
+            </Reveal>
         )}
         
         </>

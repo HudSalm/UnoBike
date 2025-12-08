@@ -23,6 +23,10 @@ main {
     }
 }
 
+.listDesktop {
+    display: none;
+}
+
 .list {
         display: flex;
         gap: 1.5rem;
@@ -39,12 +43,43 @@ main {
         li:hover {
             text-decoration: underline;
             color: #aaaaaa;
+            cursor: pointer;
         }
 }
 
 @media (min-width:768px) {
+    main {
+        margin-top: 6.5rem;
+    }
     .container {
         display: grid;
         grid-template-columns: 20% 1fr;
+
+    
+        .containerList {
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            background-color: var(--color-background2);
+            padding: 1.5rem;
+            gap: 2.5rem;
+        }
+
+        .button {
+            display: none;
+        }
+    }
+    .listDesktop {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 1.5rem;
+        color: var(--color-paragrafo);
+
+        li:hover {
+            text-decoration: underline;
+            color: #aaaaaa;
+            cursor: pointer;
+        }
     }
 }
