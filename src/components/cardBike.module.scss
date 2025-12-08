@@ -13,7 +13,6 @@
     border-radius: 8px;
     z-index: 1; 
 
-    /* CAMADA 1 (Fundo): O Gradiente que gira */
     &::before {
         content: '';
         position: absolute;
@@ -37,7 +36,6 @@
         filter: blur(8px);
     }
 
-    /* CAMADA 2 (Meio): O cartão preto */
     &::after {
         content: '';
         position: absolute;
@@ -47,7 +45,6 @@
         border-radius: 8px;
     }
 
-    /* CAMADA 3 (Topo): A imagem */
     img {
         max-width: 100%;
         z-index: 2;

@@ -27,7 +27,7 @@ const Header = () => {
                     <li><Link to='/'>HOME</Link></li>
                     <li><Link to='/Help'>AJUDA</Link></li>
                     <li><Link to='/PrivacyPolicy'>POLÍTICA DE PRIVACIDADE</Link></li>
-                    <li><a className={styles.app} href="https://play.google.com/store/apps/details?id=com.unobike.bikedagenteguapi">BAIXE O APP</a></li>
+                    <li><a className={styles.app} href="https://play.google.com/store/apps/details?id=com.unobike.bikedagenteguapi" target='_blank'>BAIXE O APP</a></li>
                 </ul>
             </nav>
         </header>
