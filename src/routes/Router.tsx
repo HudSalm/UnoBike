@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/home/Home'
 import PrivacyPolicy from '../pages/privacyPolicy/PrivacyPolicy'
-import Help from '../pages/help/help'
+import Help from '../pages/help/Help'
 
 const Router = () => {
     return (
