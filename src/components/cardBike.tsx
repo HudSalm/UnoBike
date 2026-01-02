@@ -27,8 +27,8 @@ const CardBike = ( {swiperControl}: Props) => {
                     <img src={x} alt="" className={styles.x} />
                 </span>
                 <div className={styles.bikeInfo1}>
-                    <h4>Segurança1</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    <h4>Selim</h4>
+                    <p>O Selim GTS M1 Confort é a escolha ideal para quem prioriza o bem-estar durante as pedaladas. Projetado com espuma de alta densidade e formato anatômico, ele absorve os impactos do terreno, reduzindo a fadiga e prevenindo dores em trajetos urbanos ou trilhas leves.</p>
                 </div>
             </div>
             <div className={styles.containerInfo} onClick={() => handletClick(1)}>
@@ -37,8 +37,8 @@ const CardBike = ( {swiperControl}: Props) => {
                     <img src={x} alt="" className={styles.x} />
                 </span>
                 <div className={styles.bikeInfo2}>
-                    <h4>Segurança2</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    <h4>Freios</h4>
+                    <p>O conjunto de Freios V-Brake garante frenagens precisas e seguras. Reconhecido pela eficiência e facilidade de ajuste, este sistema oferece excelente resposta em situações urbanas, proporcionando confiança a cada pedalada.</p>
                 </div>
             </div>
             <div className={styles.containerInfo} onClick={() => handletClick(2)}>
@@ -47,8 +47,8 @@ const CardBike = ( {swiperControl}: Props) => {
                     <img src={x} alt="" className={styles.x} />
                 </span>
                 <div className={styles.bikeInfo3}>
-                    <h4>Segurança3</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    <h4>Rodas</h4>
+                    <p>O aro 26 é amplamente utilizado em diversas bicicletas por sua versatilidade e eficiência. o AERO PAREDE DUPLA ARO 26 ALUMÍNIO garante a qualidade mesmo em terrenos desafiadores.</p>
                 </div>
             </div>
             <div className={styles.containerInfo}>
@@ -57,8 +57,8 @@ const CardBike = ( {swiperControl}: Props) => {
                     <img src={x} alt="" className={styles.x} />
                 </span>
                 <div className={styles.bikeInfo4}>
-                    <h4>Segurança4</h4>
-                    <p>Veja e seja visto com as laternas de LED que acendem conforme você pedala.</p>
+                    <h4>Quadro</h4>
+                    <p>Quadro GTSM1 Original, fabricado com a expertise de mais de 30 anos no mercado. O quadro possui a altura ideal para garantir a facilidade de subir e manter o ciclista o mais confortável possível.</p>
                 </div>
             </div>
         </Reveal>
