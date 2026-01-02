@@ -45,7 +45,7 @@
         border-bottom: solid #50b32c 1px;
     }
     
-    a {
+    a, .appButton {
         text-decoration: none;
         color: #50b32c;
         font-size: 1.2rem;
@@ -99,11 +99,12 @@
             transform: scale(1.05);  
         }
 
-        .app {
+        .appButton {
             background-color: #50b32c;
             border-radius: 8px;
             padding: 0.7rem 2.5rem;
             color: #f7f7f7;
+            cursor: pointer;
            
 
             &:hover {
@@ -113,7 +114,7 @@
             }
         }
 
-        a {
+        a, .appButton {
             font-size: 1rem;
             transition: 0.3s;
         }
