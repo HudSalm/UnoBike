@@ -17,7 +17,7 @@ const Header = () => {
         if (/android/i.test(userAgent)) {
             window.location.href = androidUrl;
         }
-        else if (/ipad|iphone|ipod/i.test(userAgent) && !(window as any).MSStream) {
+        else if (/ipad|iphone|ipod|macintosh/i.test(userAgent) && !(window as any).MSStream) {
             window.location.href = iosUrl;
         }
         else {
