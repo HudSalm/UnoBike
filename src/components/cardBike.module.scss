@@ -21,13 +21,13 @@
             from var(--angle), 
             transparent 0%,      
             transparent 15%,     
-            #966d9f 30%,         
-            #EA284B 45%,        
+            #50b32c 30%,         
+            #B4FF4F 45%,        
             transparent 45%,    
             
             transparent 65%,     
-            #966d9f 80%,         
-            #EA284B 95%,         
+            #50b32c 80%,         
+            #B4FF4F 95%,         
             transparent 95%   
         );
         z-index: -2; 
@@ -64,7 +64,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #966d9f;
+        background-color: #50b32c;
         border-radius: 50%;
         width: 1.5rem;
         height: 1.5rem;
@@ -136,7 +136,7 @@
 
 
     span:hover {
-        background-color: #EA284B;
+        background-color: #B4FF4F;
 
         .plus {
             display: none;

@@ -1,5 +1,5 @@
 import styles from "./Home.module.scss"
-import ImgBike from "../../assets/ImgBike.png"
+import ImgBike from "../../assets/BikeImg.png"
 import MapStation from "../../components/mapStation"
 import CardBike from "../../components/cardBike"
 import App from "../../components/app"

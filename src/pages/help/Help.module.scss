@@ -1,5 +1,5 @@
 main {
-    margin-top: 6.5rem;
+    padding-top: 8rem;
 }
 
 .containerList {
@@ -19,7 +19,7 @@ main {
         padding: 0.5rem 0.5rem ;
         background-color: var(--color-button);
         border: none;
-        color: #EA284B
+        color: #B4FF4F
     }
 }
 
@@ -48,9 +48,6 @@ main {
 }
 
 @media (min-width:768px) {
-    main {
-        margin-top: 6.5rem;
-    }
     .container {
         display: grid;
         grid-template-columns: 20% 1fr;
@@ -59,9 +56,9 @@ main {
         .containerList {
             flex-direction: column;
             justify-content: start;
-            align-items: center;
+            align-items: start;
             background-color: var(--color-background2);
-            padding: 1.5rem;
+            padding: 2rem;
             gap: 2.5rem;
             
             h1 {

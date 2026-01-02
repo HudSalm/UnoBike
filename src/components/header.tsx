@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/Logo.svg'
+import MainLogo from "../assets/MainLogo.png"
 import styles from './header.module.scss'
 import { Sling } from 'hamburger-react'
 
@@ -11,7 +11,7 @@ const Header = () => {
     
     return (
         <header className={styles.header}>
-            <a href=""><img className={styles.logo} src={Logo} alt=" logo do site" /></a>
+            <a href=""><img className={styles.logo} src={MainLogo} alt=" logo do site" /></a>
             <nav className={styles.nav}>
                <div className={styles.hamburguerIcon}>
                     <Sling 

@@ -1,14 +1,14 @@
 :root {
-    --color-h1: #EA284B;
-    --color-h2: #EA284B;
-    --color-h2-: #43204A;
+    --color-h1: #B4FF4F;
+    --color-h2: #B4FF4F;
+    --color-h2-: #3A6049;
     --color-h3: #F7F7F7;
     --color-paragrafo: #F7F7F7;
-    --color-menu: #422343;
-    --color-button: #43204A;
-    --color-button-hover: #7F1E47;
+    --color-menu: #3A6049;
+    --color-button: #3A6049;
+    --color-button-hover: #50b32c;
     --color-background1: #F7F7F7;
-    --color-background2: #422343;
+    --color-background2: #3A6049;
 }
 
 
@@ -19,7 +19,6 @@
 }
 
 body {
-    margin-top: 2rem;
     margin: 0;
 }
 

@@ -12,7 +12,8 @@
 
     .logo {
         max-width: 100%;
-        width: 30vw;
+        width: 20vw;
+        margin-left: 1rem;
     }
 }
 
@@ -41,12 +42,12 @@
         list-style: none;
         margin: 1rem 0;
         padding: 0.5rem;
-        border-bottom: solid #422343 1px;
+        border-bottom: solid #50b32c 1px;
     }
     
     a {
         text-decoration: none;
-        color: #422343;
+        color: #50b32c;
         font-size: 1.2rem;
     }
     a:hover {
@@ -99,7 +100,7 @@
         }
 
         .app {
-            background-color: #422343;
+            background-color: #50b32c;
             border-radius: 8px;
             padding: 0.7rem 2.5rem;
             color: #f7f7f7;
